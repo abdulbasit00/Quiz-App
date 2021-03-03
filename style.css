@@ -1,0 +1,1049 @@
+body
+{
+    background-image: linear-gradient(to bottom right, #000428 , #004e92)!important;
+}
+.startBtn, .adminBtn, .homeBtn
+{
+    font-size: xx-large !important;
+    border-radius: 80px !important;
+    padding: 50px !important;
+    border: none !important;
+    margin: 20px !important;
+    transition: 500ms;
+}
+.startBtn{
+    background-color:  #004e92!important;
+    color:#000428!important;
+}
+.adminBtn{
+    background-color: #000428 !important;
+    color:#004e92!important;
+}
+.homeBtn{
+    background-color: #000428 !important;
+    color:#004e92!important;
+}
+#mainDiv
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainBody
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;   
+}
+#quiz, #panelInner
+{
+    width: 800px;
+    height: 400px;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 60px auto;
+    border-radius: 30px;
+}
+#panelInner
+{
+    height: 650px;
+    width: 1200px;
+    grid-template-rows: 60px auto 62px;
+}
+#loader
+{
+    width: 100px;
+    height: 100px;
+}
+#loaderDiv
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 13;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#quizHeader, #header, #addBtnDiv
+{
+    height: 60px;
+    background-color:#004e92;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+#quizHeader
+{
+    width: 800px;
+}
+#header
+{color:#00133d;
+    justify-content: center;
+}
+#quizBody
+{
+    background-image: linear-gradient(to bottom right, #004e92 , #000428 )!important;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px 20px;
+}
+td{
+    color: white;
+}
+#timer
+{
+    color: #004e92;
+    padding: 18px;
+    background-color:#000428;
+    margin-right: -20px;
+    border-top-right-radius: 27px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.option_group{
+    margin-left: 0;
+    padding-left: 0;
+}
+li
+{
+    color:#00133d;
+    list-style-type: none;
+}
+.option, .optionPanel
+{
+    border: 3px solid transparent;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    min-height: 42px;
+    transition: 500ms;
+}
+.option:hover
+{
+    cursor: pointer;
+    border: 3px solid #000428;
+}
+.nxtBtn, .rstBtn
+{
+    background-color:  #004e92 !important;
+    border-radius: 50px !important;
+    padding: 15px !important;
+    border: none !important;
+    float: right;
+}
+.active
+{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    color: white;
+    background-color:#000428;
+    border: 3px solid  #004e92;
+    transition: 500ms;
+}
+.exitBtn
+{ background-color: #000428 !important;
+    color:#004e92!important;
+    border: white;
+    border-radius: 50px !important;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: xx-large !important;
+}
+.nxtBtn:focus, .exitBtn:focus, .rstBtn:focus, .startBtn:focus, .adminBtn:focus, .homeBtn:focus
+{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.nxtBtn:hover, .exitBtn:hover, .rstBtn:hover, .startBtn:hover, .adminBtn:hover, ..homeBtn:hover
+{
+    background-color: white !important;
+    color: black !important;
+    transition: 500ms;
+}
+/* =================Admin Panel================ */
+#mainPanel
+{
+    min-width: 300px;
+    min-height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+#questionsBody
+{
+    background-image: linear-gradient(to bottom right, #004e92 , #000428 )!important;
+    padding: 10px 20px;
+    overflow-y: auto;/*when we'll add questions then scroll bar will be needed*/
+}
+#delAllBtn, #addBtn
+{
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 8px 18px;
+    margin: 1px 30px;
+}
+#addBtnDiv
+{
+    height: 65px;
+    justify-content: center;
+    box-shadow: 0 -2px 5px 1px rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.homeBtn
+{
+    left: 70%;
+    position: fixed;
+    top: 40vh;
+    padding: 30px 50px !important;
+}
+.panelLi
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 42px;
+    align-items: center;
+    margin: 10px;
+}
+.liBtnAdd, .liBtnCancel, .liBtn
+{
+    font-size: 25px !important;
+    border-radius: 50% !important;
+    padding: 5px 13px !important;
+    margin: 0 20px;
+    max-height: 50px;
+}
+.liBtnAdd
+{
+    padding: 6px 13px 5px 13px !important;
+}
+.liBtnCancel
+{
+    padding: 6px 13px 13px 13px !important;
+}
+
+ul{
+    margin-left: -41px;
+}
+
+
+
+@media screen and (max-width: 587px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:20px !important;
+        border-radius: 80px !important;
+        padding: 50px !important;
+        border: none !important;
+        margin: 20px !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 452px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:18px !important;
+        border-radius: 80px !important;
+        padding: 50px !important;
+        border: none !important;
+        margin: 20px !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 430px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:18px !important;
+        border-radius: 80px !important;
+        padding: 40px !important;
+        border: none !important;
+        margin: 20px !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 390px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:18px !important;
+        border-radius: 80px !important;
+        padding: 35px !important;
+        border: none !important;
+        margin: 10px !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 390px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:18px !important;
+        border-radius: 80px !important;
+        padding: 30px !important;
+        border: none !important;
+        margin: 10px !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 327px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:17px !important;
+        border-radius: 80px !important;
+        padding: 25px !important;
+        border: none !important;
+        margin: 9px !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 327px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:17px !important;
+        border-radius: 80px !important;
+        padding: 25px !important;
+        border: none !important;
+        margin: 0 auto !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 278px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:17px !important;
+        border-radius: 80px !important;
+        padding: 20px !important;
+        border: none !important;
+        margin: 0 auto !important;
+        transition: 500ms;
+    }
+  }
+  @media screen and (max-width: 259px){
+    .startBtn, .adminBtn, .homeBtn
+    {
+        font-size:16px !important;
+        border-radius: 80px !important;
+        padding: 20px !important;
+        border: none !important;
+        margin: 0 auto !important;
+        transition: 500ms;
+    }
+  }
+
+
+  .Q_A_L{
+      text-align: center;
+      font-size: 70px;
+   text-align: center;
+margin: 0 auto;
+padding: 10px;
+
+  }
+.Q_a{
+   color: #004e92;
+   
+}
+.Q_b{
+ 
+    color:  #000428;
+ }
+
+
+
+
+  @media screen and (max-width:920px) {
+    #mainDiv {
+        width: 362px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 290px;
+    }
+  }
+  @media screen and (max-width:875px) {
+    #mainDiv {
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 830px) {
+    #mainDiv {
+        width: 290px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    #mainDiv {
+        width: 265px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #mainDiv {
+        width: 225px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 730px) {
+    #mainDiv {
+        width: 210px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 710px) {
+    #mainDiv {
+        width: 188px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    #mainDiv {
+        width: 146px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    #mainDiv {
+        width: 115px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 605px) {
+    #mainDiv {
+        width: 70px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    #mainDiv {
+        width: 50px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    #mainDiv {
+        width: 29px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    #mainDiv {
+        width: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 240px;
+    }
+  }
+  @media screen and (max-width: 490px) {
+    #mainDiv {
+        width: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 230px;
+    }
+  }
+  @media screen and (max-width: 465px) {
+    #mainDiv {
+        width: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 220px;
+    }
+  }
+  @media screen and (max-width: 455px) {
+    #mainDiv {
+        width: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 215px;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    #mainDiv {
+        width: 30px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    #mainDiv {
+        width: 15px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+    }
+  }
+  @media screen and (max-width: 405px) {
+    #mainDiv {
+        width: 5px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    #mainDiv {
+        width: 25px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    #mainDiv {
+        width: 18px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 187px;
+    }
+  }
+  @media screen and (max-width: 366px) {
+    #mainDiv {
+        width: 1px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    #mainDiv {
+        width: 1px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 170px;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    #mainDiv {
+        width: 1px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 160px;
+    }
+  }
+  @media screen and (max-width: 312px) {
+    #mainDiv {
+        width: 1px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 160px;
+    }
+  }
+  @media screen and (max-width: 301px) {
+    #mainDiv {
+        width: 1px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 148px;
+    }
+  }
+@media screen and (max-width:890px) {
+    #quizHeader, #header, #addBtnDiv {
+        height: 60px;
+        background-color: #004e92;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        box-shadow: 0 2px 5px 1px rgb(0 0 0 / 30%);
+        z-index: 1;
+    }
+  }
+
+  @media screen and (max-width:440px) {
+    #quizHeader, #header, #addBtnDiv {
+        height: 60px;
+        background-color: #004e92;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        box-shadow: 0 2px 5px 1px rgb(0 0 0 / 30%);
+        z-index: 1;
+    }
+  }
+  
+
+
+@media screen and (max-width:890px) {
+    #quizHeader {
+        width: 400px;
+    }
+  }
+  @media screen and (max-width:440px) {
+    #quizHeader {
+        width: 360px;
+    }
+  }
+  @media screen and (max-width:405px) {
+    #quizHeader {
+
+        width: 340px;
+    }
+  }
+  @media screen and (max-width:395px) {
+    #quizHeader {
+        width: 305px;
+    }
+  }
+  
+  @media screen and (max-width:355px) {
+    #quizHeader {
+        width: 250px;
+    }
+  }
+  @media screen and (max-width:355px) {
+    .option,.optionPanel {
+        width: auto;
+    }
+  }
+  @media screen and (max-width:920px) {
+    .option,.optionPanel ,.active{
+        width: auto;
+    }
+  }
+  
+  @media screen and (max-width:890px) {
+
+    #quiz, #panelInner {
+        width: 399px;
+        height: 400px;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 60px auto;
+        border-radius: 30px;
+    }
+  }
+  @media screen and (max-width:440px) {
+      
+    #quiz, #panelInner {
+        width: 359px;
+        height: 400px;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 60px auto;
+        border-radius: 30px;
+    }
+  }
+  @media screen and (max-width:405px) {
+      
+    #quiz, #panelInner {
+        width: 339px;
+        height: 400px;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 60px auto;
+        border-radius: 30px;
+        
+    }
+  }
+  @media screen and (max-width:395px) {
+      
+    #quiz, #panelInner {
+        width: 304px;
+        height: 400px;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 60px auto;
+        border-radius: 30px;
+        
+    }
+  }
+  @media screen and (max-width:355px) {
+      
+    #quiz, #panelInner {
+        width: 249px;
+        height: 400px;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 60px auto;
+        border-radius: 30px;
+        
+    }
+  }
+
+  @media screen and (max-width:920px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 59%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:875px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 54%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:866px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 55%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:852px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 55%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:650px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 58%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:606px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 56%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:474px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 65%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:590px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 58%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:571px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 60%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:539px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 61%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:530px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 58%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:499px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 60%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:462px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 61%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:454px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 62%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:391px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 62%;
+        position: fixed;
+        top: 74vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:389px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 66%;
+        position: fixed;
+        top: 72vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:514px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 60%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:442px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 59%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  @media screen and (max-width:450px) {
+      
+    .homeBtn
+    {width: 30px;
+        font-size: 15px !important;
+ background-color:#28a745 !important;
+ color: white !important;
+        left: 64%;
+        position: fixed;
+        top: 70vh;
+        border-radius:20px !important ;
+        padding: 10px 55px 11px 17px !important;
+    }
+  }
+  
+   @media screen and (max-width:920px) {
+    #addBtnDiv{  border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+  } 
+  @media screen and (max-width:355px) {
+    #quizBody{  width: 250px;
+    }
+  } 
+  @media screen and (max-width:355px) {
+    .table-bordered,td,th{  width: 60px !important;
+    padding: 2px;
+    }
+  } 
+  @media screen and (max-width:355px) {
+    .table td, .table th{  
+    padding: 2px !important;
+    }
+  } 
+  
